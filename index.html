@@ -22,29 +22,67 @@
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <section class="hero" id="home" aria-label="Intro">
+      <div class="hero-decor"></div>
       <div class="container hero-inner">
         <div class="hero-text">
-          <h1>Hi, I'm Kalkidan Asmamaw</h1>
-          <p>Frontend developer, Designer Problem solver<br> I build accessible and responsive websites.</p>
-          <p><a class="primary" href="#work">See my work</a></p>
+          <p class="eyebrow">Hello I’m</p>
+          <h1 class="hero-title">Kalkidan <span class="accent">Asmamaw</span></h1>
+          <p class="lead">I build <span id="typed" aria-live="polite">beautiful interfaces.</span></p>
+          <div class="hero-ctas">
+            <a class="primary" href="#work">See my work</a>
+            <a class="secondary" href="#contact">Contact me</a>
+          </div>
+          <div class="hero-socials" aria-hidden="true">
+            <a href="https://t.me/kaalii23">Telegram</a>
+            <a href="#">GitHub</a>
+          </div>
         </div>
-        <div class="hero-photo" aria-hidden="true">
-          <div class="photo-placeholder">Photo</div>
-        </div>
+
+        <aside class="hero-photo" aria-hidden="true">
+          <div class="photo-ring">
+            <img src="assets/images/phi.png" alt="Kalkidan Asmamaw" class="photo-img"/>
+          </div>
+        </aside>
       </div>
     </section>
 
     <section class="about" id="about">
       <div class="container">
         <h2>About</h2>
-        <p>Short introduction about yourself, background, skills and what you enjoy building. Mention main technologies and a concise summary of experience.</p>
-        <ul class="skills">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Responsive Design</li>
-          <li>JavaScript</li>
-        </ul>
+        <div class="about-grid">
+          <div class="profile">
+            <div class="avatar" aria-hidden="true">KA</div>
+            <h3>Kalkidan Asmamaw</h3>
+            <p class="role">Software Engineering student • Frontend Developer</p>
+            <a class="cv-btn" href="assets/resume.pdf" download>Download CV</a>
+          </div>
+          <div class="about-content">
+            <p>
+              I am a Software Engineering student at <strong>Addis Ababa Science and Technology University (AASTU)</strong>. I enjoy building responsive, accessible and user-centered web interfaces. I focus on HTML, CSS and JavaScript and I'm continually learning new tools and techniques to improve user experience and performance.
+            </p>
+
+            <h4>Core Skills</h4>
+            <div class="skills-list">
+              <div class="skill" data-percent="95">
+                <div class="skill-info"><span>HTML5</span><span class="percent">95%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+              </div>
+              <div class="skill" data-percent="92">
+                <div class="skill-info"><span>CSS3</span><span class="percent">92%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+              </div>
+              <div class="skill" data-percent="80">
+                <div class="skill-info"><span>JavaScript</span><span class="percent">80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+              </div>
+              <div class="skill" data-percent="90">
+                <div class="skill-info"><span>Responsive Design</span><span class="percent">90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -53,22 +91,43 @@
         <h2>Selected Work</h2>
         <div class="projects-grid">
           <article class="project">
-            <div class="project-thumb">Project 1</div>
-            <h3>Project Title</h3>
-            <p>Short description of the project and the role you played.</p>
-            <a href="#" class="project-link">View</a>
+            <div class="project-thumb">
+              <img src="assets/images/budget.png" alt="Personal Budget Decision Tool">
+              <div class="project-overlay">
+                <div class="overlay-inner">
+                  <h4>Personal Budget Decision Tool</h4>
+                  <p class="overlay-desc">A small app to help decide purchase feasibility using budget inputs.</p>
+                  <a class="overlay-cta" href="https://github.com/kalkidanasmamaw959-cyber/-Personal-Budget-Decision-Tool" target="_blank" rel="noopener">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Personal Budget Decision Tool</h3>
+              <p>The Personal Budget Decision Tool is a web application built using HTML, CSS, and JavaScript. It allows users to enter their budget, item price, and savings, then uses conditional logic to determine whether they can afford the purchase.</p>
+              <div class="project-actions">
+                <a class="project-link-btn" href="https://github.com/kalkidanasmamaw959-cyber/-Personal-Budget-Decision-Tool" target="_blank" rel="noopener">View</a>
+              </div>
+            </div>
           </article>
+
           <article class="project">
-            <div class="project-thumb">Project 2</div>
-            <h3>Project Title</h3>
-            <p>Short description of the project and the role you played.</p>
-            <a href="#" class="project-link">View</a>
-          </article>
-          <article class="project">
-            <div class="project-thumb">Project 3</div>
-            <h3>Project Title</h3>
-            <p>Short description of the project and the role you played.</p>
-            <a href="#" class="project-link">View</a>
+            <div class="project-thumb">
+              <img src="assets/images/robot.png" alt="Fun Logic Challenge">
+              <div class="project-overlay">
+                <div class="overlay-inner">
+                  <h4>Fun Logic Challenge</h4>
+                  <p class="overlay-desc">Interactive quiz using conditional logic to evaluate responses.</p>
+                  <a class="overlay-cta" href="https://github.com/kalkidanasmamaw959-cyber/Fun-Logic-Challenge" target="_blank" rel="noopener">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Fun Logic Challenge</h3>
+              <p>The “Are You a Human?” Fun Logic Challenge is an interactive web application built with HTML, CSS, and JavaScript. It asks users a series of questions and uses variables, data types, and if/else logic to calculate a score and determine whether the user is human, robot, or half-human.</p>
+              <div class="project-actions">
+                <a class="project-link-btn" href="https://github.com/kalkidanasmamaw959-cyber/Fun-Logic-Challenge" target="_blank" rel="noopener">View</a>
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -86,10 +145,39 @@
     </section>
 
     <section class="contact" id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Get in touch via email: <a href="mailto:kalkidanasmamaw959@gmail.com">kalkidanasmamaw959@gmail.com</a></p>
-        <p>Or find me on social media: <a href="https://t.me/kaalii23">Telegram</a> </p>
+      <div class="container contact-grid">
+        <aside class="contact-card">
+          <h2>Contact</h2>
+          <p class="muted">I'd love to hear about your project or collaboration.</p>
+          <ul class="contact-list">
+            <li><strong>Email</strong><br><a href="mailto:kalkidanasmamaw959@gmail.com">kalkidanasmamaw959@gmail.com</a></li>
+            <li><strong>Telegram</strong><br><a href="https://t.me/kaalii23">@kaalii23</a></li>
+            <li><strong>Location</strong><br>Addis Ababa, Ethiopia</li>
+          </ul>
+          <div class="socials">
+            <a class="social" href="https://t.me/kaalii23">Telegram</a>
+            <a class="social" href="#">GitHub</a>
+            <a class="social" href="#">LinkedIn</a>
+          </div>
+        </aside>
+
+        <div class="contact-form-wrap">
+          <form id="contactForm" class="contact-form" novalidate>
+            <label class="form-label">Name
+              <input name="name" type="text" required placeholder="Your name">
+            </label>
+            <label class="form-label">Email
+              <input name="email" type="email" required placeholder="you@example.com">
+            </label>
+            <label class="form-label">Message
+              <textarea name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="primary">Send Message</button>
+            </div>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -103,5 +191,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
