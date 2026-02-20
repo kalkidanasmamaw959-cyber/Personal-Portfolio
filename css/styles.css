@@ -1,0 +1,43 @@
+:root{
+  --bg:#f7f7fb;
+  --card:#ffffff;
+  --text:#0f172a;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:0 auto;padding:2rem}
+.site-header{background:linear-gradient(0deg,rgba(255,255,255,0.6),rgba(255,255,255,0.6));backdrop-filter:saturate(120%) blur(6px);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(15,23,42,0.04)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0}
+.logo{font-weight:700;color:var(--text);text-decoration:none}
+.main-nav a{margin:0 0.6rem;color:var(--muted);text-decoration:none}
+.cv-btn{background:var(--accent);color:#fff;padding:0.5rem 0.8rem;border-radius:8px;text-decoration:none}
+
+.hero{padding:4rem 0}
+.hero-inner{display:flex;gap:2rem;align-items:center}
+.hero-text h1{font-size:2rem;margin:0 0 0.5rem}
+.hero-text p{color:var(--muted);line-height:1.6}
+.primary{background:var(--accent);color:#fff;padding:0.6rem 0.9rem;border-radius:8px;text-decoration:none}
+.photo-placeholder{width:160px;height:160px;background:linear-gradient(135deg,var(--accent),#7c3aed);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+
+.about,.work,.services,.contact{padding:3rem 0}
+.skills{list-style:none;padding:0;display:flex;gap:0.6rem;margin-top:1rem}
+.skills li{background:var(--card);padding:0.4rem 0.7rem;border-radius:999px;border:1px solid rgba(15,23,42,0.06);color:var(--muted)}
+
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.project{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 4px 18px rgba(2,6,23,0.04)}
+.project-thumb{height:140px;background:linear-gradient(180deg,rgba(37,99,235,0.06),rgba(124,58,237,0.06));border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);margin-bottom:0.8rem}
+.project-link{color:var(--accent);text-decoration:none}
+
+.services-grid{display:flex;gap:1rem;flex-wrap:wrap}
+.service{background:var(--card);padding:1rem;border-radius:10px;flex:1 1 180px;text-align:center}
+
+.site-footer{padding:1.5rem 0;text-align:center;color:var(--muted);border-top:1px solid rgba(15,23,42,0.04);background:transparent}
+
+@media (max-width:800px){
+  .hero-inner{flex-direction:column;text-align:center}
+  .header-inner{gap:0.5rem}
+  .main-nav{display:none}
+}

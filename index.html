@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Personal portfolio showcasing skills, projects and contact details." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Kalkidan Asmamaw</a>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cv-btn" href="assets/resume.pdf" download>Download CV</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm Kalkidan Asmamaw</h1>
+          <p>Frontend developer, Designer Problem solver<br> I build accessible and responsive websites.</p>
+          <p><a class="primary" href="#work">See my work</a></p>
+        </div>
+        <div class="hero-photo" aria-hidden="true">
+          <div class="photo-placeholder">Photo</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About</h2>
+        <p>Short introduction about yourself, background, skills and what you enjoy building. Mention main technologies and a concise summary of experience.</p>
+        <ul class="skills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Responsive Design</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="container">
+        <h2>Selected Work</h2>
+        <div class="projects-grid">
+          <article class="project">
+            <div class="project-thumb">Project 1</div>
+            <h3>Project Title</h3>
+            <p>Short description of the project and the role you played.</p>
+            <a href="#" class="project-link">View</a>
+          </article>
+          <article class="project">
+            <div class="project-thumb">Project 2</div>
+            <h3>Project Title</h3>
+            <p>Short description of the project and the role you played.</p>
+            <a href="#" class="project-link">View</a>
+          </article>
+          <article class="project">
+            <div class="project-thumb">Project 3</div>
+            <h3>Project Title</h3>
+            <p>Short description of the project and the role you played.</p>
+            <a href="#" class="project-link">View</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="services-grid">
+          <div class="service">Web Design</div>
+          <div class="service">Frontend Development</div>
+          <div class="service">Consulting</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Get in touch via email: <a href="mailto:kalkidanasmamaw959@gmail.com">kalkidanasmamaw959@gmail.com</a></p>
+        <p>Or find me on social media: <a href="https://t.me/kaalii23">Telegram</a> </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Kalkidan Asmamaw — Built with HTML5 & CSS3</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
